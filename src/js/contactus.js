@@ -80,6 +80,8 @@ $(function () {
           phone:$('#phonevalid').val(),
         }
         localStorage.setItem('userAccount',JSON.stringify(users));
+        $('input').val(''),
+        $('p').empty();
     });
     $("#loading").fadeToggle(function(){$("#loading").remove();});
 });
